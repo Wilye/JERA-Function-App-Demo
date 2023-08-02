@@ -1,0 +1,5 @@
+client_id = '83bea295-884a-4909-9293-a49bb07a0edb'
+client_secret = '_ws8Q~nYQ-Gd0kCQHmCCZ..9aVeDrZ7ab5W.haEA'
+tenant_id = '2840389b-0f81-496f-b742-ac794a5da61e'
+group_id = '9717b8b0-c079-4946-a99b-3cae873d321e'
+channel_id = '19%3a487f4479c76746ceaae6b24b89c7a2c4%40thread.tacv2'
