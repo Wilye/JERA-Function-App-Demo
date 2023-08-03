@@ -74,7 +74,7 @@ def send_email(access_token, recipients, subject, html_body):
     }
 
     # TEST: EMAIL BODY
-
+    """
     email_body = {
     "message": {
         "subject": subject,
@@ -92,8 +92,8 @@ def send_email(access_token, recipients, subject, html_body):
     },
     "saveToSentItems": "true"
     }
-
     """
+    
     # Prepare the email body
     email_body = {
     "message": {
@@ -106,7 +106,6 @@ def send_email(access_token, recipients, subject, html_body):
     },
     "saveToSentItems": "true"
     }
-    """
 
     # Send the email
     response = requests.post(url, headers=headers, json=email_body)
