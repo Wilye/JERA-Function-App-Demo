@@ -117,6 +117,27 @@ def send_email(access_token, recipients, subject, html_body):
         print(f"Email not sent. Status code: {response.status_code}, Error: {response.text}")
 
 def get_recipients(access_token):
-    emails = get_teams_members_emails(access_token)
+    # emails = get_teams_members_emails(access_token)
+    emails = ["shelby.yang_intern@jeraamericas.com",
+              "daniel.owen@jeraamericas.com",
+              "ashish.upadhyay@jeraamericas.com",
+              "asuka.tarutani@jeraamericas.com",
+              "bruce.otte@jeraamericas.com",
+              "sayuri.onoda@jeraamericas.com",
+              "ryan.elms@jeraamericas.com",
+              "sridhar.mantri@jeraamericas.com",
+              "keith.quigley@jeraamericas.com",
+              "scott.phillips@jeraamericas.com",
+              "mariko.ikeda@jeraamericas.com",
+              "carlos.lopez@jeraamericas.com",
+              "ankita.pandey@jeraamericas.com",
+              "ritesh.choudhary_multicloud4u@jeraamericas.com",
+              "paul.limon@jeraamericas.com",
+              "ankit.gupta@jeraamericas.com",
+              "henry.mokoko@jeraamericas.com",
+              "kai.kurosawa@jeraamericas.com",
+              "junko.janvier@jeraamericas.com",
+              "rika.matsuura@jeraamericas.com",
+              "kelly.hansard@jeraamericas.com"]
     recipients = [{"emailAddress": {"address": email}} for email in emails]
     return recipients

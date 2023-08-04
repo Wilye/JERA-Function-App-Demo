@@ -6,4 +6,3 @@ azure-functions
 msal
 pandas
 requests
-pytz
