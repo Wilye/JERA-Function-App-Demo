@@ -118,6 +118,7 @@ def send_email(access_token, recipients, subject, html_body):
 
 def get_recipients(access_token):
     # emails = get_teams_members_emails(access_token)
+    """
     emails = ["shelby.yang_intern@jeraamericas.com",
               "daniel.owen@jeraamericas.com",
               "ashish.upadhyay@jeraamericas.com",
@@ -139,5 +140,7 @@ def get_recipients(access_token):
               "junko.janvier@jeraamericas.com",
               "rika.matsuura@jeraamericas.com",
               "kelly.hansard@jeraamericas.com"]
+    """
+    emails = ["shelby.yang_intern@jeraamericas.com"]
     recipients = [{"emailAddress": {"address": email}} for email in emails]
     return recipients

@@ -5,7 +5,7 @@ from JERA_main import JERA_main
 
 app = func.FunctionApp()
 
-@app.schedule(schedule="0 0 8 * * 5", arg_name="myTimer", run_on_startup=True,
+@app.schedule(schedule="0 0 13 * * 5", arg_name="myTimer", run_on_startup=False,
               use_monitor=False) 
 def TimerTrigger(myTimer: func.TimerRequest) -> None:
     utc_timestamp = datetime.datetime.utcnow().replace(
